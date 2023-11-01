@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AQh-Ju-htb">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,36 +13,42 @@
             <objects>
                 <viewController id="AQh-Ju-htb" customClass="CanadaViewController" customModule="Mariana_RiosSilveiraCarvalho_MT__8903346" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mzq-Fp-eXU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CANADIAN CITIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXM-LW-oGT">
-                                <rect key="frame" x="90" y="68" width="140" height="33.5"/>
+                                <rect key="frame" x="71.666666666666686" y="107" width="250" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="yXM-LW-oGT" secondAttribute="height" multiplier="250:60" id="07a-LW-jMP"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="QiO-6N-t6W"/>
+                                    <constraint firstAttribute="height" constant="60" id="Rbp-58-CGi"/>
+                                    <constraint firstAttribute="width" secondItem="yXM-LW-oGT" secondAttribute="height" multiplier="25:6" id="mW7-kL-Gl9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Canada" translatesAutoresizingMaskIntoConstraints="NO" id="ubn-eh-xqo">
-                                <rect key="frame" x="52" y="149.5" width="216" height="101"/>
+                                <rect key="frame" x="9.6666666666666572" y="215" width="374" height="175"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="ubn-eh-xqo" secondAttribute="height" multiplier="374:175" id="UGT-ig-8yd"/>
+                                    <constraint firstAttribute="width" constant="374" id="0Jv-N4-q3h"/>
+                                    <constraint firstAttribute="height" constant="175" id="cDT-Qh-xMR"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WID-eR-AgZ">
-                                <rect key="frame" x="50" y="298.5" width="220" height="34"/>
+                                <rect key="frame" x="86.666666666666686" y="438" width="220" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="WID-eR-AgZ" secondAttribute="height" multiplier="220:34" id="mHn-62-672"/>
+                                    <constraint firstAttribute="width" constant="220" id="htJ-Ht-jEr"/>
+                                    <constraint firstAttribute="height" constant="34" id="nEW-wH-Phg"/>
+                                    <constraint firstAttribute="width" secondItem="WID-eR-AgZ" secondAttribute="height" multiplier="110:17" id="qUE-zv-t5o"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRa-W9-ad3">
-                                <rect key="frame" x="101" y="380.5" width="118.5" height="42"/>
+                                <rect key="frame" x="84" y="520" width="225" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="NRa-W9-ad3" secondAttribute="height" multiplier="225:80" id="Yfc-43-9eT"/>
+                                    <constraint firstAttribute="height" constant="80" id="Vww-o7-IpM"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="225" id="YX7-sf-Ddg"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Find my City"/>
@@ -53,15 +60,18 @@
                         <viewLayoutGuide key="safeArea" id="yXj-kx-49h"/>
                         <color key="backgroundColor" red="0.65882354970000001" green="0.84313726430000002" blue="0.70980393890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="yXj-kx-49h" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="NRa-W9-ad3" secondAttribute="bottom" constant="48" id="7TG-RA-pzF"/>
-                            <constraint firstItem="WID-eR-AgZ" firstAttribute="top" secondItem="ubn-eh-xqo" secondAttribute="bottom" constant="48" id="9Oa-x3-cph"/>
-                            <constraint firstItem="WID-eR-AgZ" firstAttribute="centerX" secondItem="mzq-Fp-eXU" secondAttribute="centerX" id="Bbf-HQ-U6o"/>
-                            <constraint firstItem="yXM-LW-oGT" firstAttribute="centerX" secondItem="mzq-Fp-eXU" secondAttribute="centerX" id="NMF-VH-b5K"/>
-                            <constraint firstItem="NRa-W9-ad3" firstAttribute="top" secondItem="WID-eR-AgZ" secondAttribute="bottom" constant="48" id="VEJ-rK-pvV"/>
-                            <constraint firstItem="yXM-LW-oGT" firstAttribute="top" secondItem="yXj-kx-49h" secondAttribute="top" constant="48" id="dWd-6k-6Uw"/>
-                            <constraint firstItem="NRa-W9-ad3" firstAttribute="centerX" secondItem="mzq-Fp-eXU" secondAttribute="centerX" id="dYL-TS-cHU"/>
-                            <constraint firstItem="ubn-eh-xqo" firstAttribute="top" secondItem="yXM-LW-oGT" secondAttribute="bottom" constant="48" id="uB8-pm-92o"/>
-                            <constraint firstItem="ubn-eh-xqo" firstAttribute="centerX" secondItem="mzq-Fp-eXU" secondAttribute="centerX" id="y98-da-19I"/>
+                            <constraint firstItem="yXM-LW-oGT" firstAttribute="top" secondItem="yXj-kx-49h" secondAttribute="top" constant="48" id="GyE-1b-P5W"/>
+                            <constraint firstItem="ubn-eh-xqo" firstAttribute="top" secondItem="yXM-LW-oGT" secondAttribute="bottom" constant="48" id="JQ7-u5-j5g"/>
+                            <constraint firstItem="WID-eR-AgZ" firstAttribute="centerX" secondItem="mzq-Fp-eXU" secondAttribute="centerX" id="OJw-BM-1If"/>
+                            <constraint firstItem="NRa-W9-ad3" firstAttribute="centerX" secondItem="mzq-Fp-eXU" secondAttribute="centerX" id="RKi-A4-lZ8"/>
+                            <constraint firstItem="NRa-W9-ad3" firstAttribute="top" secondItem="WID-eR-AgZ" secondAttribute="bottom" constant="48" id="cLE-ke-F3p"/>
+                            <constraint firstItem="yXj-kx-49h" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yXM-LW-oGT" secondAttribute="trailing" constant="35" id="noj-IM-4Bf"/>
+                            <constraint firstItem="NRa-W9-ad3" firstAttribute="centerX" secondItem="mzq-Fp-eXU" secondAttribute="centerX" id="npw-c2-YFR"/>
+                            <constraint firstItem="WID-eR-AgZ" firstAttribute="top" secondItem="ubn-eh-xqo" secondAttribute="bottom" constant="48" id="o0d-gH-sut"/>
+                            <constraint firstItem="yXM-LW-oGT" firstAttribute="centerX" secondItem="mzq-Fp-eXU" secondAttribute="centerX" id="pZZ-WF-eQH"/>
+                            <constraint firstItem="yXM-LW-oGT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yXj-kx-49h" secondAttribute="leading" constant="35" id="wp4-Eh-2Y1"/>
+                            <constraint firstItem="yXj-kx-49h" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="NRa-W9-ad3" secondAttribute="bottom" constant="48" id="x0d-YA-1fq"/>
+                            <constraint firstItem="ubn-eh-xqo" firstAttribute="centerX" secondItem="mzq-Fp-eXU" secondAttribute="centerX" id="yB4-tN-0Te"/>
                         </constraints>
                     </view>
                     <connections>
@@ -73,8 +83,78 @@
             </objects>
             <point key="canvasLocation" x="-1059" y="-672"/>
         </scene>
+        <!--Quadratic Formula-->
+        <scene sceneID="fu7-nE-Htn">
+            <objects>
+                <viewController id="htw-Q0-ob1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nom-HL-B8v">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Quadraticformula" translatesAutoresizingMaskIntoConstraints="NO" id="ttc-UO-gIU">
+                                <rect key="frame" x="71.666666666666686" y="277" width="250" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="4Da-xm-eUA"/>
+                                    <constraint firstAttribute="height" constant="125" id="AMj-sR-6GZ"/>
+                                    <constraint firstAttribute="width" secondItem="ttc-UO-gIU" secondAttribute="height" multiplier="2:1" id="Zsf-2S-LEa"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNG-ZN-7UA">
+                                <rect key="frame" x="71.666666666666686" y="450" width="250" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="4RY-je-mU6"/>
+                                    <constraint firstAttribute="height" constant="35" id="IH5-Ju-J8x"/>
+                                    <constraint firstAttribute="width" secondItem="iNG-ZN-7UA" secondAttribute="height" multiplier="50:7" id="fe8-9Q-bqV"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Function Scene">
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="KVs-bf-b04" kind="show" id="9yV-oD-1dG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vyl-2f-see"/>
+                        <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="iNG-ZN-7UA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ttc-UO-gIU" secondAttribute="leading" id="Lv7-Wx-DTB"/>
+                            <constraint firstItem="ttc-UO-gIU" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iNG-ZN-7UA" secondAttribute="trailing" id="SuU-7m-TA8"/>
+                            <constraint firstAttribute="centerY" secondItem="ttc-UO-gIU" secondAttribute="bottom" constant="24" id="apR-Du-Qb4"/>
+                            <constraint firstItem="iNG-ZN-7UA" firstAttribute="centerX" secondItem="nom-HL-B8v" secondAttribute="centerX" id="ppB-72-aVl"/>
+                            <constraint firstItem="ttc-UO-gIU" firstAttribute="centerX" secondItem="nom-HL-B8v" secondAttribute="centerX" id="s3o-yX-1GJ"/>
+                            <constraint firstItem="iNG-ZN-7UA" firstAttribute="top" secondItem="nom-HL-B8v" secondAttribute="centerY" constant="24" id="sda-gK-GRB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quadratic Formula" id="HxZ-NA-Spw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OgJ-sy-3Rt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-218" y="139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RAa-SN-Hdi">
+            <objects>
+                <viewController id="KVs-bf-b04" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mlg-z4-C4R">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="asu-N3-4Z6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OAq-Fv-W7I"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F0l-32-xCP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="139"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Canada" width="96" height="101"/>
+        <image name="Quadraticformula" width="706" height="551"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
