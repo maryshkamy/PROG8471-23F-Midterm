@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AQh-Ju-htb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p3d-CC-04K">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Canada View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="nhm-DW-4Uv">
+            <objects>
+                <tabBarController id="p3d-CC-04K" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rc2-8U-f5B">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="AQh-Ju-htb" kind="relationship" relationship="viewControllers" id="PkJ-gJ-m13"/>
+                        <segue destination="GbF-Rv-DL1" kind="relationship" relationship="viewControllers" id="c5l-rl-hKk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hvE-2x-D9q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1903" y="139"/>
+        </scene>
+        <!--Canada-->
         <scene sceneID="7z1-4K-VrK">
             <objects>
                 <viewController id="AQh-Ju-htb" customClass="CanadaViewController" customModule="Mariana_RiosSilveiraCarvalho_MT__8903346" customModuleProvider="target" sceneMemberID="viewController">
@@ -74,6 +91,7 @@
                             <constraint firstItem="ubn-eh-xqo" firstAttribute="centerX" secondItem="mzq-Fp-eXU" secondAttribute="centerX" id="yB4-tN-0Te"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Canada" image="globe" catalog="system" id="X9e-hb-DpF"/>
                     <connections>
                         <outlet property="cityImageView" destination="ubn-eh-xqo" id="PUY-5j-AM6"/>
                         <outlet property="cityTextField" destination="WID-eR-AgZ" id="rS9-XI-Gd2"/>
@@ -82,6 +100,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J4h-4v-oE9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1059" y="-672"/>
+        </scene>
+        <!--Calculator-->
+        <scene sceneID="NGR-u6-9bK">
+            <objects>
+                <navigationController id="GbF-Rv-DL1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Calculator" image="clipboard" catalog="system" id="fFn-QP-fKQ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fju-s2-vvR">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="htw-Q0-ob1" kind="relationship" relationship="rootViewController" id="sKN-TV-MpS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DZO-tA-rpG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1060" y="139"/>
         </scene>
         <!--Quadratic Formula-->
         <scene sceneID="fu7-nE-Htn">
@@ -138,10 +173,10 @@
             <objects>
                 <viewController id="KVs-bf-b04" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mlg-z4-C4R">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="asu-N3-4Z6"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96078431610000004" green="0.75686275960000005" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="OAq-Fv-W7I"/>
                 </viewController>
@@ -153,8 +188,7 @@
     <resources>
         <image name="Canada" width="96" height="101"/>
         <image name="Quadraticformula" width="706" height="551"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="clipboard" catalog="system" width="98" height="128"/>
+        <image name="globe" catalog="system" width="128" height="123"/>
     </resources>
 </document>
