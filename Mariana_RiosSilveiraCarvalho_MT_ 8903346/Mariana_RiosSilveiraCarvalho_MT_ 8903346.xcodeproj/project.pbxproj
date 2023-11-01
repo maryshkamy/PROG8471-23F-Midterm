@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		281BDDA62AECA03700F13349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BDDA52AECA03700F13349 /* AppDelegate.swift */; };
 		281BDDA82AECA03700F13349 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BDDA72AECA03700F13349 /* SceneDelegate.swift */; };
-		281BDDAA2AECA03700F13349 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BDDA92AECA03700F13349 /* ViewController.swift */; };
 		281BDDAD2AECA03700F13349 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281BDDAB2AECA03700F13349 /* Main.storyboard */; };
 		281BDDAF2AECA03800F13349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281BDDAE2AECA03800F13349 /* Assets.xcassets */; };
 		281BDDB22AECA03800F13349 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281BDDB02AECA03800F13349 /* LaunchScreen.storyboard */; };
 		281BDDBD2AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BDDBC2AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346Tests.swift */; };
 		281BDDC72AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BDDC62AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346UITests.swift */; };
 		281BDDC92AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BDDC82AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346UITestsLaunchTests.swift */; };
+		287591C62AF08D1200E39A83 /* CanadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287591C52AF08D1200E39A83 /* CanadaViewController.swift */; };
+		28FA18C52AF1E55800685B69 /* CanadaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FA18C42AF1E55800685B69 /* CanadaViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		281BDDA22AECA03700F13349 /* Mariana_RiosSilveiraCarvalho_MT_ 8903346.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mariana_RiosSilveiraCarvalho_MT_ 8903346.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		281BDDA52AECA03700F13349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		281BDDA72AECA03700F13349 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		281BDDA92AECA03700F13349 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		281BDDAC2AECA03700F13349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		281BDDAE2AECA03800F13349 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		281BDDB12AECA03800F13349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		281BDDC22AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT_ 8903346UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mariana_RiosSilveiraCarvalho_MT_ 8903346UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		281BDDC62AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mariana_RiosSilveiraCarvalho_MT__8903346UITests.swift; sourceTree = "<group>"; };
 		281BDDC82AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mariana_RiosSilveiraCarvalho_MT__8903346UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		287591C52AF08D1200E39A83 /* CanadaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaViewController.swift; sourceTree = "<group>"; };
+		28FA18C42AF1E55800685B69 /* CanadaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,13 @@
 		281BDDA42AECA03700F13349 /* Mariana_RiosSilveiraCarvalho_MT_ 8903346 */ = {
 			isa = PBXGroup;
 			children = (
+				281BDDB32AECA03800F13349 /* Info.plist */,
 				281BDDA52AECA03700F13349 /* AppDelegate.swift */,
 				281BDDA72AECA03700F13349 /* SceneDelegate.swift */,
-				281BDDA92AECA03700F13349 /* ViewController.swift */,
-				281BDDAB2AECA03700F13349 /* Main.storyboard */,
 				281BDDAE2AECA03800F13349 /* Assets.xcassets */,
 				281BDDB02AECA03800F13349 /* LaunchScreen.storyboard */,
-				281BDDB32AECA03800F13349 /* Info.plist */,
+				281BDDAB2AECA03700F13349 /* Main.storyboard */,
+				28FA18C32AF1E50500685B69 /* Canada */,
 			);
 			path = "Mariana_RiosSilveiraCarvalho_MT_ 8903346";
 			sourceTree = "<group>";
@@ -125,6 +127,15 @@
 				281BDDC82AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346UITestsLaunchTests.swift */,
 			);
 			path = "Mariana_RiosSilveiraCarvalho_MT_ 8903346UITests";
+			sourceTree = "<group>";
+		};
+		28FA18C32AF1E50500685B69 /* Canada */ = {
+			isa = PBXGroup;
+			children = (
+				287591C52AF08D1200E39A83 /* CanadaViewController.swift */,
+				28FA18C42AF1E55800685B69 /* CanadaViewModel.swift */,
+			);
+			path = Canada;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +269,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				281BDDAA2AECA03700F13349 /* ViewController.swift in Sources */,
+				28FA18C52AF1E55800685B69 /* CanadaViewModel.swift in Sources */,
 				281BDDA62AECA03700F13349 /* AppDelegate.swift in Sources */,
+				287591C62AF08D1200E39A83 /* CanadaViewController.swift in Sources */,
 				281BDDA82AECA03700F13349 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

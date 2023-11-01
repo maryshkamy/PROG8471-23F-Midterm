@@ -1,24 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AQh-Ju-htb">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Canada View Controller-->
+        <scene sceneID="7z1-4K-VrK">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="AQh-Ju-htb" customClass="CanadaViewController" customModule="Mariana_RiosSilveiraCarvalho_MT__8903346" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mzq-Fp-eXU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CANADIAN CITIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXM-LW-oGT">
+                                <rect key="frame" x="90" y="68" width="140" height="33.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yXM-LW-oGT" secondAttribute="height" multiplier="250:60" id="07a-LW-jMP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Canada" translatesAutoresizingMaskIntoConstraints="NO" id="ubn-eh-xqo">
+                                <rect key="frame" x="52" y="149.5" width="216" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ubn-eh-xqo" secondAttribute="height" multiplier="374:175" id="UGT-ig-8yd"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WID-eR-AgZ">
+                                <rect key="frame" x="50" y="298.5" width="220" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WID-eR-AgZ" secondAttribute="height" multiplier="220:34" id="mHn-62-672"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRa-W9-ad3">
+                                <rect key="frame" x="101" y="380.5" width="118.5" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NRa-W9-ad3" secondAttribute="height" multiplier="225:80" id="Yfc-43-9eT"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Find my City"/>
+                                <connections>
+                                    <action selector="didTapFindMyCity:" destination="AQh-Ju-htb" eventType="touchUpInside" id="cDT-59-omI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yXj-kx-49h"/>
+                        <color key="backgroundColor" red="0.65882354970000001" green="0.84313726430000002" blue="0.70980393890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="yXj-kx-49h" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="NRa-W9-ad3" secondAttribute="bottom" constant="48" id="7TG-RA-pzF"/>
+                            <constraint firstItem="WID-eR-AgZ" firstAttribute="top" secondItem="ubn-eh-xqo" secondAttribute="bottom" constant="48" id="9Oa-x3-cph"/>
+                            <constraint firstItem="WID-eR-AgZ" firstAttribute="centerX" secondItem="mzq-Fp-eXU" secondAttribute="centerX" id="Bbf-HQ-U6o"/>
+                            <constraint firstItem="yXM-LW-oGT" firstAttribute="centerX" secondItem="mzq-Fp-eXU" secondAttribute="centerX" id="NMF-VH-b5K"/>
+                            <constraint firstItem="NRa-W9-ad3" firstAttribute="top" secondItem="WID-eR-AgZ" secondAttribute="bottom" constant="48" id="VEJ-rK-pvV"/>
+                            <constraint firstItem="yXM-LW-oGT" firstAttribute="top" secondItem="yXj-kx-49h" secondAttribute="top" constant="48" id="dWd-6k-6Uw"/>
+                            <constraint firstItem="NRa-W9-ad3" firstAttribute="centerX" secondItem="mzq-Fp-eXU" secondAttribute="centerX" id="dYL-TS-cHU"/>
+                            <constraint firstItem="ubn-eh-xqo" firstAttribute="top" secondItem="yXM-LW-oGT" secondAttribute="bottom" constant="48" id="uB8-pm-92o"/>
+                            <constraint firstItem="ubn-eh-xqo" firstAttribute="centerX" secondItem="mzq-Fp-eXU" secondAttribute="centerX" id="y98-da-19I"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityImageView" destination="ubn-eh-xqo" id="PUY-5j-AM6"/>
+                        <outlet property="cityTextField" destination="WID-eR-AgZ" id="rS9-XI-Gd2"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J4h-4v-oE9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1059" y="-672"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Canada" width="96" height="101"/>
+    </resources>
 </document>
