@@ -23,6 +23,8 @@
 		28FA190C2AF41F3D00685B69 /* MyLabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FA190B2AF41F3D00685B69 /* MyLabsViewController.swift */; };
 		28FA19132AF4244200685B69 /* Lab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FA19122AF4244200685B69 /* Lab2ViewController.swift */; };
 		28FA19152AF4245000685B69 /* Lab2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FA19142AF4245000685B69 /* Lab2ViewModel.swift */; };
+		28FA19182AF4296900685B69 /* Lab3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FA19172AF4296900685B69 /* Lab3ViewController.swift */; };
+		28FA191A2AF4297700685B69 /* Lab3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FA19192AF4297700685B69 /* Lab3ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		28FA190B2AF41F3D00685B69 /* MyLabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLabsViewController.swift; sourceTree = "<group>"; };
 		28FA19122AF4244200685B69 /* Lab2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab2ViewController.swift; sourceTree = "<group>"; };
 		28FA19142AF4245000685B69 /* Lab2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab2ViewModel.swift; sourceTree = "<group>"; };
+		28FA19172AF4296900685B69 /* Lab3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab3ViewController.swift; sourceTree = "<group>"; };
+		28FA19192AF4297700685B69 /* Lab3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab3ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +121,12 @@
 				281BDDA52AECA03700F13349 /* AppDelegate.swift */,
 				281BDDA72AECA03700F13349 /* SceneDelegate.swift */,
 				281BDDAE2AECA03800F13349 /* Assets.xcassets */,
+				281BDDB02AECA03800F13349 /* LaunchScreen.storyboard */,
+				281BDDAB2AECA03700F13349 /* Main.storyboard */,
 				28FA18C32AF1E50500685B69 /* Canada */,
 				28FA19092AF36C5800685B69 /* Extensions */,
 				28FA190D2AF4238B00685B69 /* Lab2 */,
-				281BDDB02AECA03800F13349 /* LaunchScreen.storyboard */,
-				281BDDAB2AECA03700F13349 /* Main.storyboard */,
+				28FA19162AF4295100685B69 /* Lab3 */,
 				28FA190A2AF41F2300685B69 /* MyLabs */,
 				28FA18C62AF2DCA700685B69 /* Quadratic */,
 			);
@@ -186,6 +191,15 @@
 				28FA19142AF4245000685B69 /* Lab2ViewModel.swift */,
 			);
 			path = Lab2;
+			sourceTree = "<group>";
+		};
+		28FA19162AF4295100685B69 /* Lab3 */ = {
+			isa = PBXGroup;
+			children = (
+				28FA19172AF4296900685B69 /* Lab3ViewController.swift */,
+				28FA19192AF4297700685B69 /* Lab3ViewModel.swift */,
+			);
+			path = Lab3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,8 +341,10 @@
 				28FA190C2AF41F3D00685B69 /* MyLabsViewController.swift in Sources */,
 				287591C62AF08D1200E39A83 /* CanadaViewController.swift in Sources */,
 				28FA19152AF4245000685B69 /* Lab2ViewModel.swift in Sources */,
+				28FA191A2AF4297700685B69 /* Lab3ViewModel.swift in Sources */,
 				28FA18C82AF2DCE500685B69 /* QuadraticViewController.swift in Sources */,
 				281BDDA82AECA03700F13349 /* SceneDelegate.swift in Sources */,
+				28FA19182AF4296900685B69 /* Lab3ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
