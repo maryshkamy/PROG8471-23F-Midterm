@@ -65,7 +65,7 @@ class CanadaViewController: UIViewController {
     }
 }
 
-// MARK: - UITextField Delegates
+// MARK: - UITextField Delegate
 extension CanadaViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         textField.becomeFirstResponder()
@@ -78,7 +78,7 @@ extension CanadaViewController: UITextFieldDelegate {
     }
 }
 
-// MARK: - CanadaViewModel Delegates
+// MARK: - CanadaViewModel Delegate
 extension CanadaViewController: CanadaViewModelDelegate {
     func updateImage(_ city: String) {
         if let image = UIImage(named: city) {

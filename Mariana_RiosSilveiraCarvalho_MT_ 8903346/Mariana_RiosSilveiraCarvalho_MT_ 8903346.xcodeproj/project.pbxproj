@@ -17,6 +17,9 @@
 		281BDDC92AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BDDC82AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346UITestsLaunchTests.swift */; };
 		287591C62AF08D1200E39A83 /* CanadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287591C52AF08D1200E39A83 /* CanadaViewController.swift */; };
 		28FA18C52AF1E55800685B69 /* CanadaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FA18C42AF1E55800685B69 /* CanadaViewModel.swift */; };
+		28FA18C82AF2DCE500685B69 /* QuadraticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FA18C72AF2DCE500685B69 /* QuadraticViewController.swift */; };
+		28FA19062AF310BB00685B69 /* QuadraticViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FA19052AF310BB00685B69 /* QuadraticViewModel.swift */; };
+		28FA19082AF368B100685B69 /* Double+ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FA19072AF368B100685B69 /* Double+ToString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		281BDDC82AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mariana_RiosSilveiraCarvalho_MT__8903346UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		287591C52AF08D1200E39A83 /* CanadaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaViewController.swift; sourceTree = "<group>"; };
 		28FA18C42AF1E55800685B69 /* CanadaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaViewModel.swift; sourceTree = "<group>"; };
+		28FA18C72AF2DCE500685B69 /* QuadraticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadraticViewController.swift; sourceTree = "<group>"; };
+		28FA19052AF310BB00685B69 /* QuadraticViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadraticViewModel.swift; sourceTree = "<group>"; };
+		28FA19072AF368B100685B69 /* Double+ToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+ToString.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +111,11 @@
 				281BDDA52AECA03700F13349 /* AppDelegate.swift */,
 				281BDDA72AECA03700F13349 /* SceneDelegate.swift */,
 				281BDDAE2AECA03800F13349 /* Assets.xcassets */,
+				28FA18C32AF1E50500685B69 /* Canada */,
 				281BDDB02AECA03800F13349 /* LaunchScreen.storyboard */,
 				281BDDAB2AECA03700F13349 /* Main.storyboard */,
-				28FA18C32AF1E50500685B69 /* Canada */,
+				28FA18C62AF2DCA700685B69 /* Quadratic */,
+				28FA19092AF36C5800685B69 /* Extensions */,
 			);
 			path = "Mariana_RiosSilveiraCarvalho_MT_ 8903346";
 			sourceTree = "<group>";
@@ -136,6 +144,23 @@
 				28FA18C42AF1E55800685B69 /* CanadaViewModel.swift */,
 			);
 			path = Canada;
+			sourceTree = "<group>";
+		};
+		28FA18C62AF2DCA700685B69 /* Quadratic */ = {
+			isa = PBXGroup;
+			children = (
+				28FA18C72AF2DCE500685B69 /* QuadraticViewController.swift */,
+				28FA19052AF310BB00685B69 /* QuadraticViewModel.swift */,
+			);
+			path = Quadratic;
+			sourceTree = "<group>";
+		};
+		28FA19092AF36C5800685B69 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				28FA19072AF368B100685B69 /* Double+ToString.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,8 +295,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				28FA18C52AF1E55800685B69 /* CanadaViewModel.swift in Sources */,
+				28FA19062AF310BB00685B69 /* QuadraticViewModel.swift in Sources */,
+				28FA19082AF368B100685B69 /* Double+ToString.swift in Sources */,
 				281BDDA62AECA03700F13349 /* AppDelegate.swift in Sources */,
 				287591C62AF08D1200E39A83 /* CanadaViewController.swift in Sources */,
+				28FA18C82AF2DCE500685B69 /* QuadraticViewController.swift in Sources */,
 				281BDDA82AECA03700F13349 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
