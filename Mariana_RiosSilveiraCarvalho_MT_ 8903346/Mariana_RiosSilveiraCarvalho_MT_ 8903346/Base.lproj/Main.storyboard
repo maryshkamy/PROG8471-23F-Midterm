@@ -176,7 +176,7 @@
                 <navigationController id="PtR-1f-tF4" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="My Labs" image="pencil" catalog="system" id="fps-bz-khJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uqf-3n-cPS">
-                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -202,20 +202,20 @@
                                     <constraint firstAttribute="height" constant="128" id="6mB-mv-uHh"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Mariana Rios Silveira Carvalho" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfv-gD-4UP">
-                                <rect key="frame" x="24" y="264" width="272" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mariana Rios Silveira Carvalho" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfv-gD-4UP">
+                                <rect key="frame" x="24" y="240" width="272" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="IMG_0197" translatesAutoresizingMaskIntoConstraints="NO" id="3kE-Iy-mDX">
-                                <rect key="frame" x="24" y="533" width="272" height="256"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="IMG_0197" translatesAutoresizingMaskIntoConstraints="NO" id="3kE-Iy-mDX">
+                                <rect key="frame" x="24" y="322" width="272" height="173"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="256" id="5jB-vz-avh"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hobby" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBq-hV-a3q">
-                                <rect key="frame" x="24" y="496" width="272" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hobby" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBq-hV-a3q">
+                                <rect key="frame" x="24" y="285" width="272" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
