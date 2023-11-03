@@ -17,6 +17,9 @@ class QuadraticViewController: UIViewController {
     @IBOutlet weak var bValueTextField: UITextField!
     @IBOutlet weak var cValueTextField: UITextField!
 
+    @IBOutlet weak var message: UILabel!
+    @IBOutlet weak var calculatedValue: UILabel!
+
     // MARK: - Initializer
     required init?(coder: NSCoder) {
         self.viewModel = QuadraticViewModel()
@@ -32,12 +35,18 @@ class QuadraticViewController: UIViewController {
     // MARK: - Private Functions
     private func setup() {
         self.setupViewModel()
+        self.setupLabels()
         self.setupTextFields()
         self.setupGestures()
     }
 
     private func setupViewModel() {
         self.viewModel.delegate = self
+    }
+
+    private func setupLabels() {
+        self.message.text = ""
+        self.calculatedValue.text = ""
     }
 
     private func setupTextFields() {
@@ -53,12 +62,6 @@ class QuadraticViewController: UIViewController {
     private func setupGestures() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         self.view.addGestureRecognizer(tap)
-    }
-
-    private func showAlert(with title: String = "", message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
-        self.present(alert, animated: true, completion: nil)
     }
 
     // MARK: - @objc Private Functions
@@ -92,6 +95,8 @@ class QuadraticViewController: UIViewController {
         self.bValueTextField.resignFirstResponder()
         self.cValueTextField.resignFirstResponder()
 
+        self.viewModel.didTapClear()
+
         self.loadViewIfNeeded()
     }
 }
@@ -112,10 +117,12 @@ extension QuadraticViewController: UITextFieldDelegate {
 // MARK: - QuadraticViewModel Delegate
 extension QuadraticViewController: QuadraticViewModelDelegate {
     func showErrorMessage(with message: String) {
-        showAlert(message: message)
+        self.message.text = message
+        self.calculatedValue.text = ""
     }
 
     func showResult(with title: String, message: String) {
-        showAlert(with: title, message: message)
+        self.message.text = ""
+        self.calculatedValue.text = "\(title)\n\(message)"
     }
 }

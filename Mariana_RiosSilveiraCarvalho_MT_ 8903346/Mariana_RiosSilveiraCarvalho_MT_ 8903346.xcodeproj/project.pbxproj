@@ -12,9 +12,6 @@
 		281BDDAD2AECA03700F13349 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281BDDAB2AECA03700F13349 /* Main.storyboard */; };
 		281BDDAF2AECA03800F13349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281BDDAE2AECA03800F13349 /* Assets.xcassets */; };
 		281BDDB22AECA03800F13349 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281BDDB02AECA03800F13349 /* LaunchScreen.storyboard */; };
-		281BDDBD2AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BDDBC2AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346Tests.swift */; };
-		281BDDC72AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BDDC62AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346UITests.swift */; };
-		281BDDC92AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BDDC82AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346UITestsLaunchTests.swift */; };
 		287591C62AF08D1200E39A83 /* CanadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287591C52AF08D1200E39A83 /* CanadaViewController.swift */; };
 		28FA18C52AF1E55800685B69 /* CanadaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FA18C42AF1E55800685B69 /* CanadaViewModel.swift */; };
 		28FA18C82AF2DCE500685B69 /* QuadraticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FA18C72AF2DCE500685B69 /* QuadraticViewController.swift */; };
@@ -53,10 +50,7 @@
 		281BDDB12AECA03800F13349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		281BDDB32AECA03800F13349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		281BDDB82AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT_ 8903346Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mariana_RiosSilveiraCarvalho_MT_ 8903346Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		281BDDBC2AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mariana_RiosSilveiraCarvalho_MT__8903346Tests.swift; sourceTree = "<group>"; };
 		281BDDC22AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT_ 8903346UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mariana_RiosSilveiraCarvalho_MT_ 8903346UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		281BDDC62AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mariana_RiosSilveiraCarvalho_MT__8903346UITests.swift; sourceTree = "<group>"; };
-		281BDDC82AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mariana_RiosSilveiraCarvalho_MT__8903346UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		287591C52AF08D1200E39A83 /* CanadaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaViewController.swift; sourceTree = "<group>"; };
 		28FA18C42AF1E55800685B69 /* CanadaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaViewModel.swift; sourceTree = "<group>"; };
 		28FA18C72AF2DCE500685B69 /* QuadraticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadraticViewController.swift; sourceTree = "<group>"; };
@@ -98,8 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				281BDDA42AECA03700F13349 /* Mariana_RiosSilveiraCarvalho_MT_ 8903346 */,
-				281BDDBB2AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT_ 8903346Tests */,
-				281BDDC52AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT_ 8903346UITests */,
 				281BDDA32AECA03700F13349 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,23 +123,6 @@
 				28FA18C62AF2DCA700685B69 /* Quadratic */,
 			);
 			path = "Mariana_RiosSilveiraCarvalho_MT_ 8903346";
-			sourceTree = "<group>";
-		};
-		281BDDBB2AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT_ 8903346Tests */ = {
-			isa = PBXGroup;
-			children = (
-				281BDDBC2AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346Tests.swift */,
-			);
-			path = "Mariana_RiosSilveiraCarvalho_MT_ 8903346Tests";
-			sourceTree = "<group>";
-		};
-		281BDDC52AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT_ 8903346UITests */ = {
-			isa = PBXGroup;
-			children = (
-				281BDDC62AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346UITests.swift */,
-				281BDDC82AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346UITestsLaunchTests.swift */,
-			);
-			path = "Mariana_RiosSilveiraCarvalho_MT_ 8903346UITests";
 			sourceTree = "<group>";
 		};
 		28FA18C32AF1E50500685B69 /* Canada */ = {
@@ -352,7 +327,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				281BDDBD2AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,8 +334,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				281BDDC92AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346UITestsLaunchTests.swift in Sources */,
-				281BDDC72AECA03800F13349 /* Mariana_RiosSilveiraCarvalho_MT__8903346UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +500,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mariana_RiosSilveiraCarvalho_MT_ 8903346/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Mariana;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -557,6 +530,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mariana_RiosSilveiraCarvalho_MT_ 8903346/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Mariana;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

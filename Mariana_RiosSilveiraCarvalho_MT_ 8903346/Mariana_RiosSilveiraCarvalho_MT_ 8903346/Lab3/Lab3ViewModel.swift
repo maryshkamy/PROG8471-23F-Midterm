@@ -75,7 +75,6 @@ class Lab3ViewModel: Lab3ViewModelProtocol {
 
     func didTapAdd() {
         self.shouldClear = false
-        self.message = areAllFieldsFilledUp() ? "" : "Complete the missing Info!"
     }
 
     func didTapSubmit() {

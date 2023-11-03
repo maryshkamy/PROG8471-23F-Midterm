@@ -30,44 +30,46 @@
         <!--Canada-->
         <scene sceneID="7z1-4K-VrK">
             <objects>
-                <viewController id="AQh-Ju-htb" customClass="CanadaViewController" customModule="Mariana_RiosSilveiraCarvalho_MT__8903346" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Canada" id="AQh-Ju-htb" customClass="CanadaViewController" customModule="Mariana_RiosSilveiraCarvalho_MT__8903346" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mzq-Fp-eXU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CANADIAN CITIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXM-LW-oGT">
-                                <rect key="frame" x="35" y="68" width="250" height="60"/>
+                                <rect key="frame" x="35" y="44" width="250" height="60"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="yXM-LW-oGT" secondAttribute="height" multiplier="25:6" id="JOe-SX-svG"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="QiO-6N-t6W"/>
                                     <constraint firstAttribute="height" constant="60" id="Rbp-58-CGi"/>
-                                    <constraint firstAttribute="width" secondItem="yXM-LW-oGT" secondAttribute="height" multiplier="25:6" id="mW7-kL-Gl9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Canada" translatesAutoresizingMaskIntoConstraints="NO" id="ubn-eh-xqo">
-                                <rect key="frame" x="-27" y="176" width="374" height="85"/>
+                                <rect key="frame" x="-27" y="120" width="374" height="175"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="0Jv-N4-q3h"/>
-                                    <constraint firstAttribute="height" constant="175" id="cDT-Qh-xMR"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="0Jv-N4-q3h"/>
+                                    <constraint firstAttribute="width" secondItem="ubn-eh-xqo" secondAttribute="height" multiplier="374:175" id="Ugc-0E-s70"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="175" id="cDT-Qh-xMR"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WID-eR-AgZ">
-                                <rect key="frame" x="50" y="309" width="220" height="34"/>
+                                <rect key="frame" x="50" y="319" width="220" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="htJ-Ht-jEr"/>
                                     <constraint firstAttribute="height" constant="34" id="nEW-wH-Phg"/>
-                                    <constraint firstAttribute="width" secondItem="WID-eR-AgZ" secondAttribute="height" multiplier="110:17" id="qUE-zv-t5o"/>
+                                    <constraint firstAttribute="width" secondItem="WID-eR-AgZ" secondAttribute="height" multiplier="110:17" id="sSx-EJ-WUT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRa-W9-ad3">
-                                <rect key="frame" x="47.5" y="391" width="225" height="80"/>
+                                <rect key="frame" x="47.5" y="401" width="225" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Vww-o7-IpM"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="225" id="YX7-sf-Ddg"/>
+                                    <constraint firstAttribute="width" secondItem="NRa-W9-ad3" secondAttribute="height" multiplier="45:16" id="qqW-R1-rDh"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Find my City"/>
@@ -79,17 +81,17 @@
                         <viewLayoutGuide key="safeArea" id="yXj-kx-49h"/>
                         <color key="backgroundColor" red="0.65882354970000001" green="0.84313726430000002" blue="0.70980393890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="yXM-LW-oGT" firstAttribute="top" secondItem="yXj-kx-49h" secondAttribute="top" constant="48" id="GyE-1b-P5W"/>
-                            <constraint firstItem="ubn-eh-xqo" firstAttribute="top" secondItem="yXM-LW-oGT" secondAttribute="bottom" constant="48" id="JQ7-u5-j5g"/>
+                            <constraint firstItem="yXM-LW-oGT" firstAttribute="top" secondItem="yXj-kx-49h" secondAttribute="top" constant="24" id="GyE-1b-P5W"/>
+                            <constraint firstItem="ubn-eh-xqo" firstAttribute="top" secondItem="yXM-LW-oGT" secondAttribute="bottom" constant="16" id="JQ7-u5-j5g"/>
                             <constraint firstItem="WID-eR-AgZ" firstAttribute="centerX" secondItem="mzq-Fp-eXU" secondAttribute="centerX" id="OJw-BM-1If"/>
                             <constraint firstItem="NRa-W9-ad3" firstAttribute="centerX" secondItem="mzq-Fp-eXU" secondAttribute="centerX" id="RKi-A4-lZ8"/>
                             <constraint firstItem="NRa-W9-ad3" firstAttribute="top" secondItem="WID-eR-AgZ" secondAttribute="bottom" constant="48" id="cLE-ke-F3p"/>
                             <constraint firstItem="yXj-kx-49h" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yXM-LW-oGT" secondAttribute="trailing" constant="35" id="noj-IM-4Bf"/>
                             <constraint firstItem="NRa-W9-ad3" firstAttribute="centerX" secondItem="mzq-Fp-eXU" secondAttribute="centerX" id="npw-c2-YFR"/>
-                            <constraint firstItem="WID-eR-AgZ" firstAttribute="top" secondItem="ubn-eh-xqo" secondAttribute="bottom" constant="48" id="o0d-gH-sut"/>
+                            <constraint firstItem="WID-eR-AgZ" firstAttribute="top" secondItem="ubn-eh-xqo" secondAttribute="bottom" constant="24" id="o0d-gH-sut"/>
                             <constraint firstItem="yXM-LW-oGT" firstAttribute="centerX" secondItem="mzq-Fp-eXU" secondAttribute="centerX" id="pZZ-WF-eQH"/>
                             <constraint firstItem="yXM-LW-oGT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yXj-kx-49h" secondAttribute="leading" constant="35" id="wp4-Eh-2Y1"/>
-                            <constraint firstItem="yXj-kx-49h" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="NRa-W9-ad3" secondAttribute="bottom" constant="48" id="x0d-YA-1fq"/>
+                            <constraint firstItem="yXj-kx-49h" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="NRa-W9-ad3" secondAttribute="bottom" constant="24" id="x0d-YA-1fq"/>
                             <constraint firstItem="ubn-eh-xqo" firstAttribute="centerX" secondItem="mzq-Fp-eXU" secondAttribute="centerX" id="yB4-tN-0Te"/>
                         </constraints>
                     </view>
@@ -103,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="-1060" y="-626"/>
         </scene>
-        <!--Calculator-->
+        <!--FunctionNavigation-->
         <scene sceneID="NGR-u6-9bK">
             <objects>
-                <navigationController id="GbF-Rv-DL1" sceneMemberID="viewController">
+                <navigationController title="FunctionNavigation" id="GbF-Rv-DL1" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Calculator" image="clipboard" catalog="system" id="fFn-QP-fKQ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fju-s2-vvR">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -120,10 +122,10 @@
             </objects>
             <point key="canvasLocation" x="-1060" y="39"/>
         </scene>
-        <!--Quadratic Formula-->
+        <!--Function-->
         <scene sceneID="fu7-nE-Htn">
             <objects>
-                <viewController id="htw-Q0-ob1" sceneMemberID="viewController">
+                <viewController title="Function" id="htw-Q0-ob1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nom-HL-B8v">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,7 +143,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="4RY-je-mU6"/>
                                     <constraint firstAttribute="height" constant="35" id="IH5-Ju-J8x"/>
-                                    <constraint firstAttribute="width" secondItem="iNG-ZN-7UA" secondAttribute="height" multiplier="50:7" id="fe8-9Q-bqV"/>
+                                    <constraint firstAttribute="width" secondItem="iNG-ZN-7UA" secondAttribute="height" multiplier="50:7" id="vPA-FG-juV"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -170,10 +172,10 @@
             </objects>
             <point key="canvasLocation" x="-219" y="39"/>
         </scene>
-        <!--My Labs-->
+        <!--MyLabsNavigation-->
         <scene sceneID="Zfe-S3-1cg">
             <objects>
-                <navigationController id="PtR-1f-tF4" sceneMemberID="viewController">
+                <navigationController title="MyLabsNavigation" id="PtR-1f-tF4" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="My Labs" image="pencil" catalog="system" id="fps-bz-khJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uqf-3n-cPS">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -187,10 +189,10 @@
             </objects>
             <point key="canvasLocation" x="-1060" y="719"/>
         </scene>
-        <!--My Labs-->
+        <!--MyLabs-->
         <scene sceneID="Xf8-lr-RH9">
             <objects>
-                <viewController id="yLX-yf-cz7" customClass="MyLabsViewController" customModule="Mariana_RiosSilveiraCarvalho_MT__8903346" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MyLabs" id="yLX-yf-cz7" customClass="MyLabsViewController" customModule="Mariana_RiosSilveiraCarvalho_MT__8903346" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZOJ-RC-KQa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -204,7 +206,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mariana Rios Silveira Carvalho" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfv-gD-4UP">
                                 <rect key="frame" x="24" y="240" width="272" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -216,7 +218,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hobby" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBq-hV-a3q">
                                 <rect key="frame" x="24" y="285" width="272" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -254,10 +256,10 @@
             </objects>
             <point key="canvasLocation" x="-219.375" y="717.25352112676057"/>
         </scene>
-        <!--Quadratic View Controller-->
+        <!--Quadratic-->
         <scene sceneID="RAa-SN-Hdi">
             <objects>
-                <viewController id="KVs-bf-b04" customClass="QuadraticViewController" customModule="Mariana_RiosSilveiraCarvalho_MT__8903346" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Quadratic" id="KVs-bf-b04" customClass="QuadraticViewController" customModule="Mariana_RiosSilveiraCarvalho_MT__8903346" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mlg-z4-C4R">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -322,8 +324,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9s-dx-LMt">
-                                <rect key="frame" x="25" y="326" width="95" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9s-dx-LMt">
+                                <rect key="frame" x="25" y="294" width="95" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Xe3-Hi-lAr"/>
+                                </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Calculate">
@@ -335,6 +340,9 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eU9-VW-xWs">
                                 <rect key="frame" x="25" y="436" width="64" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="yfr-qS-0j9"/>
+                                </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Clear">
@@ -344,25 +352,49 @@
                                     <action selector="didTapClear:" destination="KVs-bf-b04" eventType="touchUpInside" id="3TU-0n-eFI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uz2-yD-RKJ">
+                                <rect key="frame" x="25" y="353" width="270" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculated Value" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhJ-gv-TaP">
+                                <rect key="frame" x="25" y="390" width="270" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="asu-N3-4Z6"/>
                         <color key="backgroundColor" red="0.96078431610000004" green="0.75686275960000005" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="9R3-Mo-cvO" firstAttribute="top" secondItem="Xaz-uW-NQI" secondAttribute="bottom" constant="8" id="4QF-N6-PPV"/>
+                            <constraint firstItem="asu-N3-4Z6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4yi-ts-74e" secondAttribute="trailing" constant="72" id="7Ok-I3-agR"/>
                             <constraint firstItem="asu-N3-4Z6" firstAttribute="bottom" secondItem="eU9-VW-xWs" secondAttribute="bottom" constant="48" id="9FU-M4-kld"/>
+                            <constraint firstItem="JhJ-gv-TaP" firstAttribute="top" secondItem="Uz2-yD-RKJ" secondAttribute="bottom" constant="16" id="Dsb-sO-Jma"/>
+                            <constraint firstItem="asu-N3-4Z6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aaD-jp-S51" secondAttribute="trailing" constant="72" id="GOk-8P-mzu"/>
                             <constraint firstItem="Xaz-uW-NQI" firstAttribute="top" secondItem="asu-N3-4Z6" secondAttribute="top" constant="64" id="JvX-bL-1Rn"/>
+                            <constraint firstItem="JhJ-gv-TaP" firstAttribute="leading" secondItem="asu-N3-4Z6" secondAttribute="leading" constant="25" id="KIZ-Qr-3kd"/>
                             <constraint firstItem="4yi-ts-74e" firstAttribute="leading" secondItem="9R3-Mo-cvO" secondAttribute="trailing" constant="50" id="KWL-RP-iO3"/>
                             <constraint firstItem="9R3-Mo-cvO" firstAttribute="leading" secondItem="asu-N3-4Z6" secondAttribute="leading" constant="25" id="LXI-bI-4mf"/>
+                            <constraint firstItem="asu-N3-4Z6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Y9s-dx-LMt" secondAttribute="trailing" constant="200" id="Ny5-vf-HHs"/>
+                            <constraint firstItem="asu-N3-4Z6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eU9-VW-xWs" secondAttribute="trailing" constant="231" id="Orw-ht-fbn"/>
                             <constraint firstItem="6cb-SQ-tLs" firstAttribute="leading" secondItem="dcg-rI-0Iw" secondAttribute="trailing" constant="50" id="Sty-zc-bLI"/>
+                            <constraint firstItem="Uz2-yD-RKJ" firstAttribute="leading" secondItem="asu-N3-4Z6" secondAttribute="leading" constant="25" id="Tsa-kl-r8K"/>
                             <constraint firstItem="dcg-rI-0Iw" firstAttribute="leading" secondItem="asu-N3-4Z6" secondAttribute="leading" constant="25" id="ZaK-Zl-P37"/>
                             <constraint firstItem="Xaz-uW-NQI" firstAttribute="bottom" secondItem="aaD-jp-S51" secondAttribute="bottom" id="bKP-eF-4dp"/>
+                            <constraint firstItem="asu-N3-4Z6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6cb-SQ-tLs" secondAttribute="trailing" constant="72" id="ec4-kC-Rej"/>
+                            <constraint firstItem="eU9-VW-xWs" firstAttribute="top" relation="greaterThanOrEqual" secondItem="JhJ-gv-TaP" secondAttribute="bottom" constant="24" id="hGA-cc-S5n"/>
                             <constraint firstItem="4yi-ts-74e" firstAttribute="top" secondItem="aaD-jp-S51" secondAttribute="bottom" constant="8" id="hHt-0c-yap"/>
                             <constraint firstItem="aaD-jp-S51" firstAttribute="top" secondItem="Xaz-uW-NQI" secondAttribute="top" id="jak-B8-5VG"/>
                             <constraint firstItem="eU9-VW-xWs" firstAttribute="leading" secondItem="asu-N3-4Z6" secondAttribute="leading" constant="25" id="n1h-th-gA9"/>
+                            <constraint firstItem="asu-N3-4Z6" firstAttribute="trailing" secondItem="JhJ-gv-TaP" secondAttribute="trailing" constant="25" id="p1D-xX-nv3"/>
                             <constraint firstItem="dcg-rI-0Iw" firstAttribute="top" secondItem="9R3-Mo-cvO" secondAttribute="bottom" constant="8" id="seH-RU-aoD"/>
+                            <constraint firstItem="Uz2-yD-RKJ" firstAttribute="top" secondItem="Y9s-dx-LMt" secondAttribute="bottom" constant="24" id="tOi-cb-eeb"/>
+                            <constraint firstItem="asu-N3-4Z6" firstAttribute="trailing" secondItem="Uz2-yD-RKJ" secondAttribute="trailing" constant="25" id="tWy-fC-xna"/>
                             <constraint firstItem="Y9s-dx-LMt" firstAttribute="leading" secondItem="asu-N3-4Z6" secondAttribute="leading" constant="25" id="usF-ue-fYI"/>
                             <constraint firstItem="aaD-jp-S51" firstAttribute="leading" secondItem="Xaz-uW-NQI" secondAttribute="trailing" constant="50" id="uxr-3a-Fp0"/>
-                            <constraint firstItem="Y9s-dx-LMt" firstAttribute="top" secondItem="dcg-rI-0Iw" secondAttribute="bottom" constant="80" id="vGu-Rh-hZP"/>
+                            <constraint firstItem="Y9s-dx-LMt" firstAttribute="top" secondItem="dcg-rI-0Iw" secondAttribute="bottom" constant="48" id="vGu-Rh-hZP"/>
                             <constraint firstItem="6cb-SQ-tLs" firstAttribute="top" secondItem="4yi-ts-74e" secondAttribute="bottom" constant="8" id="w2i-Lk-BAd"/>
                             <constraint firstItem="Xaz-uW-NQI" firstAttribute="leading" secondItem="asu-N3-4Z6" secondAttribute="leading" constant="25" id="z9j-5H-phg"/>
                         </constraints>
@@ -372,16 +404,18 @@
                         <outlet property="aValueTextField" destination="aaD-jp-S51" id="okH-HI-Akb"/>
                         <outlet property="bValueTextField" destination="4yi-ts-74e" id="bTD-WC-wHH"/>
                         <outlet property="cValueTextField" destination="6cb-SQ-tLs" id="eCD-VH-Sjb"/>
+                        <outlet property="calculatedValue" destination="JhJ-gv-TaP" id="hKt-gp-IFW"/>
+                        <outlet property="message" destination="Uz2-yD-RKJ" id="nZc-zT-1tx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F0l-32-xCP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="700" y="39"/>
         </scene>
-        <!--Lab 2-->
+        <!--Lab2-->
         <scene sceneID="MUA-ZZ-syn">
             <objects>
-                <viewController id="VnF-Ur-kp9" customClass="Lab2ViewController" customModule="Mariana_RiosSilveiraCarvalho_MT__8903346" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Lab2" id="VnF-Ur-kp9" customClass="Lab2ViewController" customModule="Mariana_RiosSilveiraCarvalho_MT__8903346" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N1M-xc-vK2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -525,10 +559,10 @@
             </objects>
             <point key="canvasLocation" x="700" y="718"/>
         </scene>
-        <!--Lab 3-->
+        <!--Lab3-->
         <scene sceneID="KLO-D1-TFg">
             <objects>
-                <viewController id="fQL-Bn-e7F" customClass="Lab3ViewController" customModule="Mariana_RiosSilveiraCarvalho_MT__8903346" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Lab3" id="fQL-Bn-e7F" customClass="Lab3ViewController" customModule="Mariana_RiosSilveiraCarvalho_MT__8903346" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z0h-bC-Zyd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -672,10 +706,10 @@
             </objects>
             <point key="canvasLocation" x="1599" y="719"/>
         </scene>
-        <!--Lab 4-->
+        <!--Lab4-->
         <scene sceneID="aKB-A7-TJ3">
             <objects>
-                <viewController id="WuB-Cu-aS7" customClass="ViewController" customModule="Lab4MarianaRiosSilveiraCarvalho" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Lab4" id="WuB-Cu-aS7" customClass="ViewController" customModule="Mariana_RiosSilveiraCarvalho_MT__8903346" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mgl-yt-nBt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

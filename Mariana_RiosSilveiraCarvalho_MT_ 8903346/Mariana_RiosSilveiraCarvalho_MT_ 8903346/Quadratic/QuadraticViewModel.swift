@@ -72,13 +72,14 @@ class QuadraticViewModel: QuadraticViewModelProtocol {
     }
 
     func didTapClear() {
-        self.a = 0
-        self.b = 0
-        self.c = 0
+        self.a = nil
+        self.b = nil
+        self.c = nil
         self.aText = ""
         self.bText = ""
         self.cText = ""
-        self.errors = []
+        self.errors = ["Enter a value for A, B and C to find X."]
+        self.checkErrors()
     }
 
     // MARK: - Private Functions
@@ -102,6 +103,11 @@ class QuadraticViewModel: QuadraticViewModelProtocol {
 
     private func calculate() {
         guard let a = a, let b = b, let c = c else { return }
+        guard a != 0 else {
+            self.errors.append("The value you entered for A is invalid.")
+            self.checkErrors()
+            return
+        }
 
         let discriminant: Double = pow(b, 2) - (4 * a * c)
         let x1: Double = (-b + sqrt(fabs(discriminant))) / (2 * a)
